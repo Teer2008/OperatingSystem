@@ -1,5 +1,5 @@
+echo Compiling
 
-  
 export PATH=$PATH:/usr/local/i386elfgcc/bin
 
 nasm "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/boot/bootloader.asm" -f bin -o "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/boot.bin"
@@ -12,3 +12,5 @@ i386-elf-ld -o "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/fu
 cat "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/boot.bin" "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/full_kernel.bin" "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/zeros.bin"  > "/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/Thon.bin"
 
 qemu-system-x86_64 -drive format=raw,file="/home/teer/Schreibtisch/Programming/C/OperatingSystem/src/bin/Thon.bin",index=0,if=floppy,  -m 128M
+
+echo Compiling Succesfull

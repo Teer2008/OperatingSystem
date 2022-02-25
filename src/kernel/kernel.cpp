@@ -1,4 +1,9 @@
+void print(char String){
+    *(char*)0xb8000 = String;
+    return;
+}
+
 extern "C" void main(){
-    *(char*)0xb8000 = 'A';
+    print('a');
     return;
 }
