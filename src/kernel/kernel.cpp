@@ -1,6 +1,6 @@
 #include "kernel.h"
 
 extern "C" void main(){
-    print((255,255,255), "Hello World");
+    print(7, "Welcome to THON!!!");
     return;
 }
