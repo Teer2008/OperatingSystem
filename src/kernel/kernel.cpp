@@ -1,6 +1,6 @@
 #include "kernel.h"
 
 extern "C" void main(){
-    print(7, "Welcome to THON!!!");
+    print(3, "Welcome to THOS!!!", 8, 2);
     return;
 }
