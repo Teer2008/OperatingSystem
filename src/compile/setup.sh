@@ -7,6 +7,7 @@ sudo apt-get install qemu-kvm
 
 sudo apt update
 sudo apt install curl
+sudo apt install xorriso
 sudo apt install build-essential
 sudo apt install bison
 sudo apt install flex
